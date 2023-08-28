@@ -6,10 +6,12 @@ import converter from "../utils/firebase";
 import { useUserContext } from "../context/UserContext";
 
 export const getCreateExpense = () => {
-    const {user} = useUserContext()
-    console.log(user?.uid)
-    const ref = collection(firestore, `/users/${user?.uid}/expense`).withConverter(converter<Expense>())
-    const {mutate, isError, isLoading} = useFirestoreCollectionMutation(ref)
+  const { user } = useUserContext();
+  const ref = collection(
+    firestore,
+    `/users/${user?.uid}/expense`
+  ).withConverter(converter<Expense>());
+  const { mutate, isError, isLoading } = useFirestoreCollectionMutation(ref);
 
-    return {mutate, hasError: isError, isLoading}
-}
+  return { mutate, hasError: isError, isLoading };
+};

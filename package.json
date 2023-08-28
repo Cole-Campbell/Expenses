@@ -1,11 +1,11 @@
 {
-  "name": "react-typescript",
+  "name": "cw-expenses",
   "version": "1.0.0",
   "description": "React and TypeScript example starter project",
   "keywords": [
     "typescript",
     "react",
-    "starter"
+    "expenses"
   ],
   "main": "src/index.tsx",
   "dependencies": {

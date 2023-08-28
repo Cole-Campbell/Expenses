@@ -3,15 +3,14 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "@firebase/firestore";
 import { getAuth } from "@firebase/auth";
 
-// CONVERT TO .env variables
 const firebaseConfig = {
-  apiKey: "AIzaSyA5CV56uw4y1OaN3PfZ0mv3yOyhgJyXBJM",
-  authDomain: "cw-expenses.firebaseapp.com",
-  projectId: "cw-expenses",
-  storageBucket: "cw-expenses.appspot.com",
-  messagingSenderId: "989076775990",
-  appId: "1:989076775990:web:6afc854c77186fcbcda497",
-  measurementId: "G-E6YCZ11JR9",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_ANALYTIC_ID,
 };
 
 const app = initializeApp(firebaseConfig);
