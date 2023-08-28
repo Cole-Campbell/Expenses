@@ -18,6 +18,3 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const firestore = getFirestore(app);
 export const auth = getAuth(app);
-
-// LOGIN FUNC
-export const credentialLogin = (email: string, password: string) => {};

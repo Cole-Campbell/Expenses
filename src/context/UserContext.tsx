@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { onAuthStateChanged, User } from "@firebase/auth";
+import { onAuthStateChanged, User, UserInfo } from "@firebase/auth";
 import { auth } from "../services/firestore";
 
 export interface IUserContext {
   isLoggedIn?: boolean;
-  user?: any;
+  user: UserInfo | null;
 }
 
 const UserContext = React.createContext<IUserContext>({
