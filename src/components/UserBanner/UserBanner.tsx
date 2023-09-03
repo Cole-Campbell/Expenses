@@ -1,7 +1,7 @@
 import React from "react";
 import { useUserContext } from "../../context/UserContext";
 import { signOut } from "@firebase/auth";
-import { auth } from "../../services/firestore";
+import { auth } from "../../services/fireBase";
 
 export const UserBanner = () => {
   const { user } = useUserContext();

@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 
 export const DashboardPage = () => {
   const { data: expenses, isLoading, hasError } = getExpenses();
-  console.log(expenses);
   const navigate = useNavigate();
   return (
     <PageViewLayout title="Dashboard">

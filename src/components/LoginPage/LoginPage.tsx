@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PageViewLayout } from "../PageViewLayout/PageViewLayout";
-import { signInWithEmailAndPassword, signOut } from "@firebase/auth";
-import { auth } from "../../services/firestore";
+import { signInWithEmailAndPassword } from "@firebase/auth";
+import { auth } from "../../services/fireBase";
 import { useNavigate } from "react-router-dom";
 
 export const LoginPage = () => {
