@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { onAuthStateChanged, User, UserInfo } from "@firebase/auth";
-import { auth } from "../services/firestore";
+import { auth } from "../services/fireBase";
 
 export interface IUserContext {
   isLoggedIn?: boolean;

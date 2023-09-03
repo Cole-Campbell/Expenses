@@ -1,6 +1,6 @@
 import { useFirestoreQueryData } from "@react-query-firebase/firestore";
 import { query, collection, where, orderBy } from "firebase/firestore";
-import { firestore } from "../services/firestore";
+import { firestore } from "../services/fireBase";
 import { Expense } from "../types/expense";
 import converter from "../utils/firebase";
 import { useUserContext } from "../context/UserContext";
